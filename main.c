@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
     int choice, error = 0;
 
     /* Allocate the memory for an array of integers */
-    int *array = (int*) malloc(array_size * sizeof(int));
+    int *array = (int*) malloc(arguments.array_size * sizeof(int));
 
     print_user_options();
     scanf("%d", &choice);
