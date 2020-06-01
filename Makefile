@@ -1,4 +1,4 @@
-output: main.o helpers.o sorting.o
+output: main.o helpers.o sorting.o 
 	gcc main.o helpers.o sorting.o -o sorter
 
 main.o: main.c
@@ -11,4 +11,4 @@ helpers.o: helpers.c helpers.h
 	gcc -c helpers.c
 
 clean:
-	rm *.o sorter
+	rm *.o *.gch sorter

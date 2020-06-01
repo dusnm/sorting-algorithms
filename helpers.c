@@ -5,7 +5,6 @@
  * A set of helper functions used througout the program
  */
 #include "helpers.h"
-#include "config.h"
 
 /* Returns a random integer between minimum (inclusive) and maximum (exclusive) */
 int random_integer(int minimum, int maximum)
@@ -31,9 +30,9 @@ void swap(int* first_value, int* second_value)
 }
 
 /* Initialize the array with random integers */
-void initialize_array(int array[], int size)
+void initialize_array(int array[], int size, int max_number)
 {
-    for (int i = 0; i < size; array[i++] = random_integer(1, max_random_number));
+    for (int i = 0; i < size; array[i++] = random_integer(1, max_number));
 }
 
 /* Print the values of the array to stdout */
