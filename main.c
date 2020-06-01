@@ -16,7 +16,7 @@ static error_t parse_opt(int key, char *arg, struct argp_state *state)
 
     switch (key)
     {
-        case 'a':
+        case 's':
             arguments->array_size = atoi(arg);
             break;
         case 'm':

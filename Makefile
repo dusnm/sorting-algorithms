@@ -11,4 +11,4 @@ helpers.o: helpers.c helpers.h
 	gcc -c helpers.c
 
 clean:
-	rm *.o *.gch sorter
+	rm *.o sorter

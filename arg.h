@@ -21,7 +21,7 @@ static char doc[] = "A simple program used to demonstrate the difference in effi
 /* Command line argument options */
 static struct argp_option options[] = 
 {
-    {"array-size", 'a', "array_size", 0, "Size of the array to be sorted."},
+    {"array-size", 's', "array_size", 0, "Size of the array to be sorted."},
     {"max-number", 'm', "max_number", 0, "Maximum random number to be generated."},
     {0}
 };
