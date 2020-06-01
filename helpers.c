@@ -13,7 +13,8 @@ int random_integer(int minimum, int maximum)
     static int seeded = 0;
 
     /* Seed the random number generator only once */
-    if (0 == seeded) {
+    if (0 == seeded) 
+    {
         srand(time(NULL));
         seeded = 1;
     }
