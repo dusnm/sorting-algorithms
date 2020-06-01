@@ -7,7 +7,7 @@
 #include <argp.h>
 
 /* Program version */
-const char *argp_program_version = "Sorter v1.0.0";
+const char *argp_program_version = "Sorter v1.0.1";
 
 /* Bug report email address */
 const char *argp_program_bug_address = "dusan@dusanmitrovic.xyz";
