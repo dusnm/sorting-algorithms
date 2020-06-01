@@ -29,6 +29,6 @@ static struct argp_option options[] =
 /* Command line arguments */
 struct arguments
 {
-    int array_size; /* Argument for -a */
+    int array_size; /* Argument for -s */
     int max_number; /* Argument for -m */
 };
