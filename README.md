@@ -3,7 +3,14 @@
 A simple program used to demonstrate the difference in efficiency of various sorting algorithms.
 
 ### Compilation
-
+Clone the repository
+```
+git clone https://github.com/dusnm/sorting-algorithms.git
+```
+```
+cd sorting-algorithms
+```
+Compile using make
 ```
 make
 ```
