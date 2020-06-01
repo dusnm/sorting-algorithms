@@ -27,7 +27,8 @@ int main(int argc, char *argv[])
             print_array(array, array_size);
             break;
         case QUICK_SORT:
-            /* TODO: Implement Quick Sort */
+            quicksort(array, 0, array_size - 1);
+            print_array(array, array_size);
             break;
         default:
             fprintf(stderr, "No algorithm chosen. Terminating.\n");

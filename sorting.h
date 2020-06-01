@@ -13,3 +13,5 @@
 #endif
 
 void bubble_sort(int array[], int size);
+
+void quicksort(int array[], int low, int high);

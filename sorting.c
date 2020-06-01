@@ -4,6 +4,7 @@
  *
  * Implementation of popular sorting algorithms
  */
+#include "helpers.h"
 
 /**
  * Bubble sort
@@ -31,4 +32,45 @@ void bubble_sort(int array[], int size)
 
         if (0 == swapping_occured) break;
     }
+}
+
+/**
+ * Quicksort
+ * Complexity
+ *
+ * Best: O(n log n)
+ * Average: O(n log n)
+ * Worst: O(n^2)
+ */
+int partition(int array[], int low, int high)
+{
+    int pivot = array[high];
+    int i = low - 1;
+    int temp;
+
+    for (int j = low; j <= high; j++)
+    {
+        if (array[j] < pivot) {
+            i++;
+            temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
+
+    temp = array[i + 1];
+    array[i + 1] = array[high];
+    array[high] = temp;
+
+    return i + 1;
+}
+
+void quicksort(int array[], int low, int high)
+{ 
+   if (low < high) {
+        int partition_index = partition(array, low, high);
+
+        quicksort(array, low, partition_index - 1);
+        quicksort(array, partition_index + 1, high);
+   }
 }
