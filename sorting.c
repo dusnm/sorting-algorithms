@@ -13,7 +13,7 @@
  * Best: O(n)
  * Average: O(n^2)
  * Worst: O(n^2)
- */
+ */ 
 void bubble_sort(int array[], int size)
 {
     int swapping_occured = 0;
