@@ -10,6 +10,8 @@
 
 int random_integer(int minimum, int maximum);
 
+void swap(int *a, int* b);
+
 void initialize_array(int array[], int size);
 
 void print_array(int array[], int size);

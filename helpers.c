@@ -21,6 +21,14 @@ int random_integer(int minimum, int maximum)
     return rand() % (maximum - minimum + 1) + minimum;
 }
 
+/* Swaps the values of two integers in memory */
+void swap(int* a, int* b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 /* Initialize the array with random integers */
 void initialize_array(int array[], int size)
 {
