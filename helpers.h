@@ -10,7 +10,7 @@
 
 int random_integer(int minimum, int maximum);
 
-void swap(int *a, int* b);
+void swap(int *first_value, int* second_value);
 
 void initialize_array(int array[], int size);
 

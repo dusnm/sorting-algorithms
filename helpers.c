@@ -23,11 +23,11 @@ int random_integer(int minimum, int maximum)
 }
 
 /* Swaps the values of two integers in memory */
-void swap(int* a, int* b)
+void swap(int* first_value, int* second_value)
 {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
+    int temp = *first_value;
+    *first_value = *second_value;
+    *second_value = temp;
 }
 
 /* Initialize the array with random integers */
