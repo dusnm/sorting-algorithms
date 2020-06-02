@@ -4,6 +4,9 @@
  *
  * Argument header file
  */
+#ifndef ARG_H
+#define ARG_H
+
 #include <argp.h>
 
 /* Program version */
@@ -32,3 +35,5 @@ struct arguments
     int array_size; /* Argument for -s */
     int max_number; /* Argument for -m */
 };
+
+#endif

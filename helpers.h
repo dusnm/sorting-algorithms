@@ -4,6 +4,9 @@
  *
  * Helpers Header file
  */
+#ifndef HELPERS_H
+#define HELPERS_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>  
@@ -17,3 +20,5 @@ void initialize_array(int array[], int size, int max_number);
 void print_array(int array[], int size);
 
 void print_user_options();
+
+#endif

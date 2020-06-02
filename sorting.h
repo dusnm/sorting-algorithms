@@ -4,14 +4,14 @@
  *
  * Sorting header file
  */
-#ifndef BUBBLE_SORT
-    #define BUBBLE_SORT 1
-#endif
+#ifndef SORTING_H
+#define SORTING_H
 
-#ifndef QUICK_SORT
-    #define QUICK_SORT 2
-#endif
+#define BUBBLE_SORT 1
+#define QUICK_SORT 2
 
 void bubble_sort(int array[], int size);
 
 void quicksort(int array[], int low, int high);
+
+#endif
